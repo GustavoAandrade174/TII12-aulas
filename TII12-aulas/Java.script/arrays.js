@@ -27,3 +27,32 @@ for(let i= 0; i<=frutas.length;i++){
 frutas.forEach((valor, indice) =>{
     console.log("indice", indice, "Fruta:", valor)
 })
+
+//percorrendo com o for of
+for(const fruta of frutas){
+    console.log("frutas da vez:", fruta)
+};
+
+const numeros = [1,2,3,4,5,6,7,8,9,10]
+
+//usando o método filter para localizar apenas os numeros pares
+const numerosPares = numeros.filter ((numeros) =>{
+    return numero % 2 === 0; //condição é verdadeira
+});
+
+const numerosImpares = numeros.filter ((numeros) =>{
+    return numero % 2 !== 0; //condição é verdadeira
+});
+
+
+console.log("Todos os números:", numeros);
+console.log("Número pares: ", numerosPares);
+console.log("Números impares: ", numerosImpares);
+
+// Método map para a manipulação dos valores.
+//Tratores dessa forma como valores diferentes (sem modificar o array original.)
+const quadrados = numeros.map((numero)=>{
+    return numeros*numeros;
+});
+
+console.log("Valores ao quadrado: ", quadrados);
