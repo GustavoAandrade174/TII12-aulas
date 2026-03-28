@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1> Trabalhando com Formulários</h1>
+    <p>Elementos de formulároios sõa voltados para a interção do usuário, entrada de dados,seleção de opções,
+        processamento para manipulação de dados entre outros.</p>
+    <p> Para que um formulário fuincione é nescessário combiná-lo com uma <strong>linguagem de programação.</strong></p>
+    <hr>
+    <form action="" method="post" name="">
+        <p>
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" id="celular" placeholder="(00)0000-0000" required>
+        </p>
+        <p>É maior de idade:</p>
+
+        <input type="radio" id="sim" name="escolha">
+        <label for="sim">sim</label>
+
+        <input type="radio" id="Não" name="escolha">
+        <label for="Não">não</label>
+        <p>Interesses:</p>
+        <p>
+            <input type="checkbox" id="html" name="Interesse">
+            <label for="html">HTML</label>
+        </p>
+        <p>
+            <input type="checkbox" id="css" name="Interesse">
+            <label for="css">CSS</label>
+        </p>
+        <p>
+            <input type="checkbox" id="Js" name="Interesse">
+            <label for="Js">JavaScript</label>
+        </p>
+        <p>
+
+            <label>Data de nascimento:</label>
+            <input type="data" id="nascimento" name="nascimento" placeholder="00/00/0000" required>
+        </p>
+        <p>
+            <label>Qual sua cor Favorita:</label>
+            <input type="color" id="color" name="cor">
+        </p>
+        <p>
+            <label>Qual é sua idade?</label>
+            <input type="number" id="idade" name="idade">
+        </p>
+        <p>
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto">
+                <option value="">Escolha uma opção:
+                </option>
+                <option value="elogio">Elogios
+                </option>
+                <option value="reclamação">Reclamações
+                </option>
+                <option value="outros">Outro
+                </option>
+            </select>
+        </p>
+        <p>
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
+        </p>
+        <p>
+            <label>Senha:</label>
+            <input type="password">
+        </p>
+        <button id="" onclick="">ENVIAR</button>
+
+    </form>
+</body>
+
+</html>

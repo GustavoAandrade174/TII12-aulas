@@ -1,0 +1,100 @@
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 2: DOM</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .card { border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; max-width: 300px; }
+        .destaque { background-color: yellow; font-weight: bold; }
+        .erro { border: 2px solid red; color: red; }
+    </style>
+</head>
+<body>
+    <h1>Treino de DOM</h1>
+
+    <!-- ELEMENTOS PARA O EXERCÍCIO -->
+    <h2 id="titulo-principal">Título Original</h2>
+    
+    <div class="card" id="produto-card">
+        <img id="img-produto" src="" alt="Imagem Vazia" width="100">
+        <p class="descricao">Descrição do produto aqui.</p>
+        <p class="preco">R$ 50,00</p>
+        <button id="btn-comprar">Comprar</button>
+    </div>
+
+    <input type="text" id="campo-nome" placeholder="Digite seu nome">
+    <div id="lista-comentarios"></div>
+
+</body>
+<script>
+// =================================================================
+// BLOCO 1: SELEÇÃO E CONTEÚDO
+// =================================================================
+
+// EX 1: Seleção por ID
+// Selecione o h2 (titulo-principal) e mude o texto dele para "Loja Virtual".
+
+// EX 2: Seleção por Classe
+// Selecione o parágrafo com classe '.descricao'.
+// Mude o texto para "Notebook Gamer".
+
+// EX 3: Mudando Estilo Direto
+// Selecione o elemento com classe '.preco'.
+// Mude a cor do texto para verde e o tamanho da fonte para 20px via JS.
+
+// EX 4: Manipulando Atributos
+// Selecione a imagem (img-produto).
+// Defina o atributo 'src' para "[https://via.placeholder.com/150](https://via.placeholder.com/150)".
+
+// EX 5: Pegando Valor de Input
+// Defina o valor (.value) do 'campo-nome' para "Cliente Teste".
+
+
+// =================================================================
+// BLOCO 2: CLASSES E EVENTOS
+// =================================================================
+
+// EX 6: Adicionando Classe
+// Selecione o 'produto-card'.
+// Adicione a classe CSS 'destaque' a ele (já criada no style lá em cima).
+
+// EX 7: Toggle de Classe (Alternar)
+// Remova a classe 'destaque' que você acabou de adicionar.
+
+// EX 8: Evento de Clique Simples
+// Adicione um ouvinte de evento (addEventListener) no botão 'btn-comprar'.
+// Ao clicar, exiba um alert("Produto adicionado!").
+
+// EX 9: Evento com Estilo
+// No mesmo clique do botão, mude a cor de fundo do botão para "gray".
+
+// EX 10: Prevenção de Padrão (Conceitual)
+// Se fosse um formulário, qual comando usamos para impedir a página de recarregar?
+// (Apenas escreva o nome do comando como comentário aqui).
+
+
+// =================================================================
+// BLOCO 3: CRIAÇÃO E HIERARQUIA
+// =================================================================
+
+// EX 11: Criando Elementos
+// Crie um novo elemento parágrafo ('p') na memória do JS.
+// Defina o texto dele como "Este é um comentário novo.".
+
+// EX 12: Inserindo na Tela (Append)
+// Selecione a div 'lista-comentarios'.
+// Adicione o parágrafo que você criou dentro dessa div.
+
+// EX 13: Criando com Estilo
+// Crie um novo botão. Mude o texto para "Cancelar".
+// Adicione a classe 'erro' a ele.
+
+// EX 14: Inserindo no Pai
+// Adicione esse botão "Cancelar" dentro do 'produto-card'.
+
+// EX 15: Removendo Elementos
+// Selecione o título principal (h2) e remova-o da tela (.remove()).
+
+</script>
+</html>
